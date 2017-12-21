@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login_register/login_register.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--<div class="top"></div>-->
+		<div class="return"></div>
+		<div class="welcome"></div>
+		<div class="login_btn"></div>
+		<div class="register_btn"></div>
+		<!--第三方登录-->
+		<div class="another"></div>
+		<div class="qq"></div>
+		<div class="weChat"></div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".return").click(function(){
+				history.back();
+			})
+			$(".login_btn").click(function(){
+				window.location.href = 'login.html';
+			})
+			$(".register_btn").click(function(){
+				window.location.href = 'register.html';
+			})
+		})
+	</script>
+</html>

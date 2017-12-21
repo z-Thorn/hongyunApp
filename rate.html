@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>会员等级</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/rate/rate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<!--顶部-->
+			<!--<div class="top"></div>-->
+			<!--返回上一页-->
+			<div class="return"></div>
+			<p class="title">会员等级</p>
+			<!--头像-->
+			<div class="head_img"></div>
+			<span class="span1">近一年消费金额</span>
+			<span class="span2">￥40000</span>
+		</div>
+		<!--白银VIP-->
+		<!--<div class="vip"></div>-->
+		<div class="swiper-container">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide"></div>
+			    <div class="swiper-slide"></div>
+			    <div class="swiper-slide"></div>
+			  </div>
+		</div>
+		<!--翻页箭头-->
+		<div class="arrow"></div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var mySwiper = new Swiper('.swiper-container', {
+//				prevButton:'.swiper-button-prev',
+//				nextButton:'.swiper-button-next',
+			});
+			$(".return").click(function(){
+				history.back();
+			})
+		})
+	</script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/personal/personal.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<!--<div class="top"></div>-->
+		<!--返回首页-->
+		<div class="return"></div>
+		<span class="topic">个人信息</span>
+		<span class="head_img"></span>
+		<span class="vip"></span>
+		<!--个人主要信息-->
+		<div class="contain">
+			<div class="size">
+				<div class="box">
+					<div class="height">
+						<div class="left">昵称</div>
+						<a href="" class="right">
+							<span>十里浅秋</span>
+							<div class="go"></div>
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="height">
+						<div class="left">性别</div>
+						<a href="" class="right">
+							<span>女</span>
+							<div class="go"></div>
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="height">
+						<div class="left">生日</div>
+						<a href="" class="right">
+							<span>1992.11.21</span>
+							<div class="go"></div>
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="height">
+						<div class="left">电话</div>
+						<a href="" class="right">
+							<span>去绑定</span>
+							<div class="go"></div>
+						</a>
+					</div>
+				</div>
+				<div class="box" style="border-bottom: none;">
+					<div class="height">
+						<div class="left">收货地址</div>
+						<a href="" class="right">
+							<span>去绑定</span>
+							<div class="go"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="change">
+			<span>切换账号</span>
+			<div class="icon"></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".return").click(function(){
+				history.back();
+			})
+			$(".vip").click(function(){
+				window.location.href = 'rate.html';
+			})
+			$('.change').click(function(){
+				window.localStorage.clear();
+				window.location.href = 'login_register.html';
+			})
+		})
+	</script>
+</html>

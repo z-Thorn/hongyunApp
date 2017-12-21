@@ -1,0 +1,146 @@
+body {
+  background: #fcf5eb;
+  position: relative;
+  margin-bottom: 1rem; }
+
+.top {
+  width: 7.27rem;
+  height: 0.24rem;
+  margin: 0 auto;
+  background: url(../../img/index/head.png) no-repeat;
+  background-size: 100% 100%; }
+
+.title {
+  width: 100%;
+  font-size: 0.36rem;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem; }
+
+.edit {
+  position: absolute;
+  top: 0.72rem;
+  right: 0.48rem;
+  font-size: 0.3rem;
+  color: #333333; }
+
+.swiper-container {
+  width: 100%;
+  height: 3.04rem; }
+  .swiper-container .swiper-slide {
+    position: relative; }
+    .swiper-container .swiper-slide:first-child {
+      background: url(../../img/bag/1.png) no-repeat;
+      background-size: 100% 100%; }
+    .swiper-container .swiper-slide:last-child {
+      width: 1.32rem;
+      height: 3.06rem;
+      background: url(../../img/bag/delete.png) no-repeat;
+      background-size: 100% 100%; }
+    .swiper-container .swiper-slide span {
+      position: absolute;
+      top: 1.35rem;
+      left: 0.38rem;
+      width: 0.28rem;
+      height: 0.28rem;
+      background: url(../../img/bag/circle.png) no-repeat;
+      background-size: 100% 100%; }
+
+.pay {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  margin-top: 0.72rem;
+  border-top: 1px solid #e8e1d8;
+  overflow: hidden; }
+  .pay .contain {
+    width: 100%;
+    margin-top: 0.12rem;
+    margin-bottom: 0.13rem;
+    height: 1.04rem;
+    display: flex; }
+    .pay .contain .all {
+      position: relative;
+      width: 2.45rem; }
+      .pay .contain .all .all-choose {
+        position: absolute;
+        top: 0.35rem;
+        left: 0.38rem;
+        width: 0.28rem;
+        height: 0.28rem;
+        background: url(../../img/bag/circle.png) no-repeat;
+        background-size: 100% 100%; }
+      .pay .contain .all span {
+        position: absolute;
+        bottom: 0.05rem;
+        left: 0.25rem;
+        font-size: 0.26rem;
+        color: #333333; }
+    .pay .contain .total {
+      position: relative;
+      width: 2.65rem;
+      font-size: 0;
+      display: flex;
+      align-items: center; }
+      .pay .contain .total span:first-child {
+        font-size: 0.36rem;
+        color: #333333; }
+      .pay .contain .total span:nth-child(2) {
+        font-size: 0.38rem;
+        font-weight: bold;
+        color: #a31515;
+        margin-right: 0.19rem; }
+      .pay .contain .total span:last-child {
+        position: absolute;
+        bottom: 0.05rem;
+        right: 0.19rem;
+        font-size: 0.22rem;
+        color: #666666; }
+    .pay .contain .button {
+      width: 2.4rem;
+      height: 1.04rem;
+      background: url(../../img/bag/balance.png) no-repeat;
+      background-size: 100% 100%; }
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.98rem;
+  background: #fffcf8; }
+  .foot .nav {
+    width: 6.52rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .foot .nav a {
+      display: block; }
+    .foot .nav .home_page {
+      width: 0.43rem;
+      height: 0.71rem;
+      background: url(../../img/classify/first.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .classify {
+      width: 0.48rem;
+      height: 0.62rem;
+      background: url(../../img/index/tab/mr/classify.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .order {
+      width: 0.42rem;
+      height: 0.70rem;
+      background: url(../../img/index/tab/mr/custom.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .bag {
+      width: 0.64rem;
+      height: 0.69rem;
+      background: url(../../img/index/tab/xz/shopping-bag.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .mine {
+      width: 0.42rem;
+      height: 0.70rem;
+      background: url(../../img/index/tab/mr/my.png) no-repeat;
+      background-size: 100% 100%; }

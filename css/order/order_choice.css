@@ -1,0 +1,182 @@
+body {
+  background: #fcf5eb;
+  position: relative; }
+
+p {
+  margin: 0; }
+
+.top {
+  position: fixed;
+  top: 0.1rem;
+  width: 7.50rem;
+  height: 0.24rem;
+  background: url(../../img/index/head.png) no-repeat center;
+  background-size: 7.27rem 0.24rem; }
+
+.return {
+  position: absolute;
+  top: 0.76rem;
+  left: 0.65rem;
+  width: 0.2rem;
+  height: 0.36rem;
+  background: url(../../img/order/sy/arrow.png) no-repeat;
+  background-size: 100% 100%; }
+
+.title {
+  width: 100%;
+  font-size: 0.36rem;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  padding-top: 0.74rem; }
+
+.line {
+  position: relative;
+  width: 2.7rem;
+  height: 0.01rem;
+  margin: 0 auto;
+  background: #333333; }
+  .line span {
+    height: 0.33rem;
+    font-size: 0.34rem;
+    color: #333333;
+    position: absolute;
+    top: -0.23rem;
+    left: 0.31rem;
+    padding: 0 0.37rem;
+    background: #fcf5eb; }
+
+.line {
+  margin-top: 0.83rem; }
+
+.choice {
+  width: 6.20rem;
+  height: 1.21rem;
+  margin: 0.61rem auto 0;
+  display: flex;
+  justify-content: space-between; }
+  .choice .fabric {
+    width: 1.74rem;
+    height: 1.21rem;
+    background: url(../../img/order/choose/xz/1.png) no-repeat;
+    background-size: 1.74rem 0.75rem;
+    border-bottom: 1px solid #A31515; }
+  .choice .style {
+    width: 1.74rem;
+    height: 1.21rem;
+    background: url(../../img/order/choose/mr/2.png) no-repeat;
+    background-size: 1.74rem 0.75rem; }
+  .choice .master {
+    width: 1.74rem;
+    height: 1.21rem;
+    background: url(../../img/order/choose/mr/3.png) no-repeat;
+    background-size: 1.74rem 0.75rem; }
+
+.details {
+  width: 6.20rem;
+  height: 7.70rem;
+  margin: 0 auto;
+  overflow: auto;
+  background: url(../../img/order/choose/back.png) no-repeat;
+  background-size: 100% 100%; }
+  .details .p1, .details .p2 {
+    width: 100%;
+    margin-top: 0.42rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #333333; }
+  .details .p2 {
+    margin-top: 0.55rem; }
+  .details .material {
+    width: 4.62rem;
+    height: auto;
+    margin: 0.44rem auto 0; }
+    .details .material .row {
+      width: 100%;
+      margin-bottom: 0.7rem;
+      font-size: 0.28rem;
+      color: #666666;
+      display: flex;
+      justify-content: space-between; }
+      .details .material .row:last-child {
+        margin-bottom: 0.55rem; }
+    .details .material .active {
+      color: #A31515; }
+  .details .line_virtual {
+    width: 100%;
+    height: 0.02rem;
+    background: url(../../img/order/choose/line.png);
+    background-size: 100% 100%; }
+  .details .topic {
+    width: 4.62rem;
+    margin: 0.44rem auto 0;
+    font-size: 0.28rem;
+    color: #666666; }
+  .details .include {
+    width: 4.62rem;
+    margin: 0.27rem auto 0; }
+    .details .include .variety {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.27rem; }
+      .details .include .variety .kind1, .details .include .variety .kind2 {
+        font-size: 0.28rem;
+        color: #666666; }
+      .details .include .variety .red1 {
+        width: 0.5rem;
+        height: 0.5rem;
+        background: url(../../img/order/choose/red1.png) no-repeat;
+        background-size: 100% 100%;
+        margin-left: 0.15rem;
+        margin-right: 1.35rem; }
+      .details .include .variety .red2 {
+        width: 0.5rem;
+        height: 0.5rem;
+        background: url(../../img/order/choose/red2.png) no-repeat;
+        background-size: 100% 100%;
+        margin-left: 0.15rem; }
+
+.question {
+  width: 6.20rem;
+  margin: 0.3rem auto 0;
+  display: block;
+  overflow: hidden; }
+  .question span {
+    width: 0.3rem;
+    height: 0.31rem;
+    background: url(../../img/order/choose/question.png) no-repeat;
+    background-size: 100% 100%;
+    float: right; }
+
+.preview {
+  position: relative;
+  width: 1.36rem;
+  height: 4.04rem;
+  margin: 0.54rem auto 0;
+  background: url(../../img/order/js/clothes.png) no-repeat;
+  background-size: 100% 100%; }
+  .preview .rotation {
+    position: absolute;
+    top: 1.7rem;
+    left: -1.1rem;
+    width: 3.37rem;
+    height: 0.54rem;
+    background: url(../../img/order/choose/rotate.png) no-repeat;
+    background-size: 100% 100%; }
+
+.p3, .p4, .p5 {
+  width: 100%;
+  font-size: 0.24rem;
+  color: #333333;
+  margin: 0;
+  text-align: center; }
+
+.p3 {
+  margin-top: 0.35rem; }
+
+.button {
+  width: 100%;
+  height: 2.54rem;
+  background: url(../../img/order/choose/sure.png) no-repeat;
+  background-size: 100% 100%;
+  margin-top: 0.44rem; }

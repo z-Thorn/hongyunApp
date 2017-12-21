@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import "../order/public_order.scss";
+body{
+    position: relative;
+    width: 100%;
+    height: 13.34rem;
+    background: url(../../img/personal/ios/back.png)no-repeat;
+    background-size: 100% 100%;
+}
+.topic{
+    position: absolute;
+    top: 1.69rem;
+    left: 0.67rem;
+    font-size: 0.56rem;
+    font-weight: bold;
+    color: #333333;
+}
+//头像
+.head_img{
+    position: absolute;
+    top: 2.68rem;
+    left: 0.65rem;
+    width: 1.93rem;
+    height: 1.93rem;
+    background: url(../../img/personal/ios/tx.png)no-repeat;
+    background-size: 100% 100%;
+}
+//白金会员
+.vip{
+    position: absolute;
+    top: 3.63rem;
+    left: 2.88rem;
+    width: 1.22rem;
+    height: 0.39rem;
+    background: url(../../img/personal/ios/viop.png)no-repeat;
+    background-size: 100% 100%;
+}
+//个人基本信息
+.contain{
+    width: 100%;
+    height: auto;
+    padding-top: 5.22rem;
+    border-bottom: 1px solid #e8e1d8;
+    .size{
+        width: 6.86rem;
+        height: auto;
+        margin-top: 0.29rem;
+        margin-left: 0.64rem;
+        .box{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 1.27rem;
+            border-bottom: 1px solid #e8e1d8;
+            .height{
+                width: 100%;
+                height: 0.32rem;
+                display: block;
+                .left{
+                    font-size: 0.32rem;
+                    color: #333333;
+                    float: left;
+                }
+                .right{
+                    height: 0.30rem;
+                    float: right;
+                    margin-right: 0.66rem;
+                    span{
+                        font-size: 0.3rem;
+                        color: #666666;
+                        float: left;
+                        line-height: 0.3rem;
+                    }
+                    .go{
+                        width: 0.16rem;
+                        height: 0.28rem;
+                        background: url(../../img/order/cl/arrow_right.png)no-repeat;
+                        background-size: 100% 100%;
+                        float: left;
+                        margin-left: 0.35rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.change{
+    position: absolute;
+    bottom: 0.74rem;
+    right: 0.63rem;
+    height: 0.3rem;
+    font-size: 0;
+    display: flex;
+    span{
+        font-size: 0.3rem;
+        color: #666666;
+        line-height: 0.3rem;
+        }
+    .icon{
+        width: 0.3rem;
+        height: 0.3rem;
+        background: url(../../img/personal/ios/change.png)no-repeat;
+        background-size: 100% 100%;
+        margin-left: 0.25rem;
+    }
+}

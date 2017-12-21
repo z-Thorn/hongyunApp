@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>定制首页</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/order/order_index.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+		<script type="text/javascript" src="js/infinite.js"></script>
+	</head>
+	<body>
+		<!--<div class="top"></div>-->
+		<span class="return"></span>
+		<p class="title">红韵定制</p>
+		<div class="process">
+			<div class="question"></div>
+		</div>
+		<div class="line"><span>定制欣赏</span></div>
+		<div class="contain">
+			<div class="production">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="production">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+		</div>
+		<!--定制按钮，固定在页面底部-->
+		<a class="start" href="order_cl.html"></a>
+	</body>
+	<script>
+		$(function(){
+			$(".return").click(function(){
+				window.location.href = 'index.html';
+			})
+			$(".production").click(function(){
+				window.location.href = 'details.html';
+			})
+		})
+		isScrollToPageBottom();
+        watchScroll();
+	</script>
+</html>

@@ -1,0 +1,224 @@
+body {
+  background: #fcf5eb;
+  position: relative; }
+
+.top {
+  position: fixed;
+  z-index: 1;
+  top: 0.1rem;
+  width: 100%;
+  height: 0.24rem;
+  background: url(../../img/index/head.png) no-repeat center;
+  background-size: 7.27rem 0.24rem; }
+
+header {
+  position: relative;
+  width: 100%; }
+  header .bottom {
+    width: 100%;
+    height: 0.63rem;
+    margin-top: 0.57rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header .bottom .left {
+      width: 0.39rem;
+      height: 0.34rem;
+      background: url(../../img/index/nav/menu.png) no-repeat;
+      background-size: 100% 100%;
+      float: left;
+      margin-right: 0.56rem; }
+    header .bottom .middle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.2rem;
+      height: 0.63rem;
+      background: url(../../img/index/nav/search.png) no-repeat;
+      background-size: 100% 100%;
+      float: left; }
+      header .bottom .middle input {
+        width: 1.44rem;
+        height: 0.22rem;
+        font-size: 0.22rem;
+        color: #979491;
+        border: none;
+        outline: medium;
+        background: #fcf5eb; }
+    header .bottom .right {
+      width: 0.47rem;
+      height: 0.42rem;
+      background: url(../../img/index/nav/message.png) no-repeat;
+      background-size: 100% 100%;
+      float: left;
+      margin-left: 0.59rem; }
+
+.contain {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 0.12rem; }
+  .contain .classify {
+    width: 1.53rem;
+    overflow: hidden; }
+    .contain .classify .cs {
+      width: 100%;
+      height: 1.3rem;
+      font-size: 0.28rem;
+      color: #333333;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contain .classify .cs:first-child {
+        margin-top: 0.21rem; }
+  .contain .show {
+    width: 5.97rem;
+    background: #fffcf8;
+    overflow: hidden; }
+    .contain .show .pics {
+      width: 5.74rem;
+      margin-top: 0.1rem;
+      margin-left: 0.12rem; }
+      .contain .show .pics .all {
+        position: relative;
+        width: 5.74rem;
+        height: 2rem;
+        background: url(../../img/classify/banner.png) no-repeat;
+        background-size: 100% 100%; }
+        .contain .show .pics .all .cover {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          font-size: 0.5rem;
+          color: white;
+          text-align: center;
+          line-height: 2rem;
+          background: rgba(0, 0, 0, 0.6); }
+      .contain .show .pics .row1, .contain .show .pics .row2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.15rem; }
+        .contain .show .pics .row1 .left, .contain .show .pics .row1 .right, .contain .show .pics .row2 .left, .contain .show .pics .row2 .right {
+          width: 2.8rem;
+          height: 4rem; }
+      .contain .show .pics .row1 {
+        margin-top: 0.20rem; }
+        .contain .show .pics .row1 .left {
+          background: url(../../img/classify/1.png) no-repeat;
+          background-size: 100% 100%; }
+        .contain .show .pics .row1 .right {
+          background: url(../../img/classify/2.png) no-repeat;
+          background-size: 100% 100%; }
+      .contain .show .pics .row2 .left {
+        background: url(../../img/classify/3.png) no-repeat;
+        background-size: 100% 100%; }
+      .contain .show .pics .row2 .right {
+        background: url(../../img/classify/4.png) no-repeat;
+        background-size: 100% 100%; }
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.98rem;
+  background: #fffcf8; }
+  .foot .nav {
+    width: 6.52rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .foot .nav a {
+      display: block; }
+    .foot .nav .home_page {
+      width: 0.43rem;
+      height: 0.71rem;
+      background: url(../../img/classify/first.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .classify {
+      width: 0.48rem;
+      height: 0.62rem;
+      background: url(../../img/index/tab/xz/classify.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .order {
+      width: 0.42rem;
+      height: 0.70rem;
+      background: url(../../img/index/tab/mr/custom.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .bag {
+      width: 0.64rem;
+      height: 0.69rem;
+      background: url(../../img/index/tab/mr/shopping-bag.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .mine {
+      width: 0.42rem;
+      height: 0.70rem;
+      background: url(../../img/index/tab/mr/my.png) no-repeat;
+      background-size: 100% 100%; }
+
+.aside {
+  position: fixed;
+  top: 0;
+  left: -5.9rem;
+  width: 5.9rem;
+  height: 13.34rem;
+  background: url(../../img/index/ct/background.png) no-repeat;
+  background-size: 100% 100%; }
+  .aside .head_img {
+    position: absolute;
+    top: 1.5rem;
+    left: 0.6rem;
+    width: 1.61rem;
+    height: 1.60rem;
+    background: url(../../img/index/ct/head_portrait.png) no-repeat;
+    background-size: 100% 100%; }
+  .aside .nickname {
+    position: absolute;
+    top: 2rem;
+    left: 2.61rem;
+    font-size: 0.26rem;
+    color: #333333; }
+  .aside .vip {
+    position: absolute;
+    top: 2.35rem;
+    left: 2.52rem;
+    width: 1.22rem;
+    height: 0.39rem;
+    background: url(../../img/index/ct/viop.png) no-repeat;
+    background-size: 100% 100%; }
+  .aside .list {
+    width: 5.3rem;
+    height: auto;
+    padding-top: 4rem;
+    margin-left: 0.6rem; }
+    .aside .list .list_contain {
+      width: 2rem;
+      height: 0.7rem;
+      font-size: 0.32rem;
+      color: #333333;
+      line-height: 0.7rem;
+      margin-bottom: 0.75rem; }
+  .aside .icon {
+    margin-left: 0.6rem;
+    width: 3.83rem;
+    height: 0.47rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .aside .icon .icon1 {
+      width: 0.45rem;
+      height: 0.45rem;
+      background: url(../../img/index/ct/settlement.png) no-repeat;
+      background-size: 100% 100%; }
+    .aside .icon .icon2 {
+      width: 0.47rem;
+      height: 0.47rem;
+      background: url(../../img/index/ct/night.png) no-repeat;
+      background-size: 100% 100%; }
+    .aside .icon .icon3 {
+      width: 0.56rem;
+      height: 0.45rem;
+      background: url(../../img/index/ct/Scan_code.png) no-repeat;
+      background-size: 100% 100%; }

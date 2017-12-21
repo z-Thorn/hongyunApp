@@ -1,0 +1,70 @@
+body {
+  background: #fcf5eb;
+  position: relative; }
+
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 4.06rem;
+  overflow: hidden;
+  background: url(../../img/rate/ios/back.png) no-repeat;
+  background-size: 100% 100%; }
+  .wrap .top {
+    width: 7.27rem;
+    height: 0.24rem;
+    margin: 0.1rem auto 0;
+    background: url(../../img/index/head.png) no-repeat;
+    background-size: 100% 100%; }
+  .wrap .return {
+    position: absolute;
+    top: 0.66rem;
+    left: 0.65rem;
+    width: 0.2rem;
+    height: 0.36rem;
+    background: url(../../img/order/sy/arrow.png) no-repeat;
+    background-size: 100% 100%; }
+  .wrap .title {
+    width: 100%;
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin-top: 0.3rem; }
+  .wrap .head_img {
+    position: absolute;
+    top: 1.27rem;
+    left: 0.65rem;
+    width: 1.61rem;
+    height: 1.60rem;
+    background: url(../../img/rate/ios/tx.png) no-repeat;
+    background-size: 100% 100%; }
+  .wrap .span1 {
+    position: absolute;
+    top: 1.7rem;
+    left: 2.5rem;
+    font-size: 0.25rem;
+    color: #696661; }
+  .wrap .span2 {
+    position: absolute;
+    top: 2.08rem;
+    left: 2.5rem;
+    font-size: 0.27rem;
+    font-weight: bold;
+    color: #a31515; }
+
+.swiper-container {
+  width: 5.51rem;
+  height: 7.9rem;
+  margin: 0.38rem auto 0; }
+  .swiper-container .swiper-slide {
+    background: url(../../img/rate/ios/rate.png) no-repeat;
+    background-size: 100% 100%; }
+
+.arrow {
+  position: absolute;
+  top: 8.22rem;
+  right: 0.65rem;
+  width: 0.16rem;
+  height: 0.28rem;
+  background: url(../../img/rate/ios/arrow.png) no-repeat;
+  background-size: 100% 100%; }

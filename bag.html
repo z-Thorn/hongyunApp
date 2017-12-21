@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>购物袋</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bag/bag.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+	</head>
+	<body>
+		<!--<div class="top"></div>-->
+		<p class="title">购物袋</p>
+		<span class="edit">编辑</span>
+		<div class="swiper-container">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide"><span value="0" class="span-circle"></span></div>
+			    <div class="swiper-slide" id="delete1"></div>
+			  </div>
+		</div>
+		<div class="swiper-container" style="margin-top: 0.1rem;">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide"><span value="0" class="span-circle"></span></div>
+			    <div class="swiper-slide" id="delete2"></div>
+			  </div>
+		</div>
+		<div class="swiper-container" style="margin-top: 0.1rem;">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide"><span value="0" class="span-circle"></span></div>
+			    <div class="swiper-slide" id="delete3"></div>
+			  </div>
+		</div>
+		<!--底部结算栏-->
+		<div class="pay">
+			<div class="contain">
+				<div class="all">
+					<div class="all-choose"></div>
+					<span>全选</span>
+				</div>
+				<div class="total">
+					<span>总计：</span>
+					<span class="money">￥0</span>
+					<span class="count">(0件)顺丰包邮</span>
+				</div>
+				<div class="button"></div>
+			</div>
+		</div>
+		<!--底部固定导航-->
+		<div class="foot">
+			<div class="nav">
+				<a href="index.html" class="home_page"></a>
+				<a href="classify.html" class="classify"></a>
+				<a href="order_index.html" class="order"></a>
+				<a href="bag.html" class="bag"></a>
+				<a href="mine.html" class="mine"></a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var mySwiper = new Swiper('.swiper-container', {
+				slidesPerView: 'auto',
+				spaceBetween : 0,
+				resistanceRatio: 0
+			});
+			var flag = true;
+			//编辑
+			$(".edit").click(function(){
+				if(flag){
+					$(".swiper-slide").animate({right:'1.32rem'},300);
+					flag = !flag;
+				}else{
+					$(".swiper-slide").animate({right:'0'},300);
+					flag = !flag;
+				}
+			})
+			//选择
+			var time = 0,num = 0;
+			var len = $(".span-circle").length;
+//			$(".span-circle").each(function(){
+				$(".span-circle").click(function(){
+					if($(this).attr('value')==0){
+						num++;
+						$(this).css({
+							'background':'url(img/bag/circle_choose.png) no-repeat',
+							'background-size':'100% 100%'
+						})
+						$(this).attr('value','1');
+						$(".money").html('￥'+2379*num);
+						$(".count").html('('+num+'件)顺丰包邮');
+						if(num==3){
+							$(".all-choose").css('background-image','url(img/bag/circle_choose.png)');
+							time = 1;
+						}
+					}else{
+						num--;
+						$(this).css({
+							'background':'url(img/bag/circle.png) no-repeat',
+							'background-size':'100% 100%'
+						})
+						$(this).attr('value','0');
+						$(".money").html('￥'+2379*num);
+						$(".count").html('('+num+'件)顺丰包邮');
+						$(".all-choose").css('background-image','url(img/bag/circle.png)');
+						time = 0;
+					}
+				})
+//			})
+			//全选
+			$(".all-choose").click(function(){
+				time++;
+				if((time%2)!=0){
+					$(this).css('background-image','url(img/bag/circle_choose.png)');
+					$(".span-circle").css('background-image','url(img/bag/circle_choose.png)');
+					$(".money").html('￥'+2379*len);
+					$(".count").html('(3件)顺丰包邮');
+					$(".span-circle").attr('value','1');
+					num=3;
+				}else{
+					$(this).css('background-image','url(img/bag/circle.png)');
+					$(".span-circle").css('background-image','url(img/bag/circle.png)');
+					$(".money").html('￥'+0);
+					$(".count").html('(0件)顺丰包邮');
+					$(".span-circle").attr('value','0');
+					num=0;
+				}
+			})
+			//删除
+			$("#delete1").click(function(){
+				$(this).closest('.swiper-container').remove();
+			})
+			$("#delete2").click(function(){
+				$(this).closest('.swiper-container').remove();
+			})
+			$("#delete3").click(function(){
+				$(this).closest('.swiper-container').remove();
+			})
+		})
+	</script>
+</html>

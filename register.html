@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>注册页</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login_register/register.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<!--<div class="top"></div>-->
+		<!--返回箭头-->
+		<div class="return"></div>
+		<!--返回登录-->
+		<span class="login">登录</span>
+		<span class="phone_number">手机号</span>
+		<input type="tel" placeholder="123-4567-8978" id="tel" value=""/>
+		<span class="alert"></span>
+		<!--发送验证码-->
+		<div class="send">发送验证码</div>
+		<div class="line1"></div>
+		<span class="code">验证码</span>
+		<input type="text" id="yz_code"/>
+		<div class="line2"></div>
+		<div class="judge"></div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".return").click(function(){
+				history.back();
+			})
+			$(".login").click(function(){
+				window.location.href = 'login.html';
+			})
+			$("#tel").blur(function(){
+				var tel = $(this).val();
+				var myreg=/^[1][1,2,3,4,5,6,7,8,9][0-9]{9}$/;
+				if(tel==''){
+					$(".alert").css('display','block');
+					$(".alert").html('内容不能为空！');
+				}else if(!myreg.test(tel)){
+					$(".alert").css('display','block');
+					$(".alert").html('手机号错误！');
+				}else{
+					$(".alert").css('display','none');
+					$(".send").css('display','block');
+					localStorage.setPhone = tel;
+				}
+			})
+			$("#yz_code").blur(function(){
+				$(".judge").css('background-image','url(img/login_register2/register/ios/deep.png)');
+			})
+			$(".send").click(function(){
+				$("#yz_code").focus();
+				$(this).css('background-image','url(img/login_register2/register/ios/jx2.png)');
+				$(this).html('60s');
+				var time = 60;
+				var int = setInterval(function(){
+					time--;
+					$(".send").html(time+'s');
+					if(time<1){
+						clearInterval(int);
+						$(".send").css('background-image','url(img/login_register2/register/ios/jx.png)');
+						$(".send").html('发送验证码');
+					}
+				},1000)
+			})
+			$(".judge").click(function(){
+				window.location.href = 'psw_setting.html';
+			})
+		})
+	</script>
+</html>

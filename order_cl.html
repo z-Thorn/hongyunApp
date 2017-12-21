@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>定制--测量</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/order/order_cl.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--<div class="top"></div>-->
+		<span class="return"></span>
+		<p class="title">量体度身</p>
+		<!--测量图例-->
+		<div class="legend">
+			<div class="question"></div>
+		</div>
+		<div class="line"><span>尺寸填写</span></div>
+		<!--尺寸填写具体内容-->
+		<div class="contain">
+			<div class="size">
+				<div class="box">
+					<div class="height">
+						<div class="left">身高</div>
+						<a href="" class="right">
+							<span>去绑定</span>
+							<div class="go"></div>
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="height">
+						<div class="left">体重</div>
+						<a href="" class="right">
+							<span>去绑定</span>
+							<div class="go"></div>
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="height">
+						<div class="left">胸围</div>
+						<a href="" class="right">
+							<span>去绑定</span>
+							<div class="go"></div>
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="height">
+						<div class="left">腰围</div>
+						<a href="" class="right">
+							<span>去绑定</span>
+							<div class="go"></div>
+						</a>
+					</div>
+				</div>
+				<div class="box" style="border-bottom: none;">
+					<div class="height">
+						<div class="left">臀围</div>
+						<a href="" class="right">
+							<span>去绑定</span>
+							<div class="go"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--提交数据-->
+		<div class="submit"></div>
+	</body>
+	<script>
+		$(function(){
+			$(".return").click(function(){
+				window.location.href = 'order_index.html';
+			})
+			$(".submit").click(function(){
+				window.location.href = 'order_choice.html';
+			})
+		})
+	</script>
+</html>

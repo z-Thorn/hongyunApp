@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>分类</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/classify/classify.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--<div class="top"></div>-->
+		<header>
+			<div class="bottom">
+				<div class="left"></div>
+				<div class="middle">
+					<input type="text" name="" id="in" value="" placeholder="搜索：香云纱"/>
+				</div>
+				<div class="right"></div>
+			</div>
+		</header>
+		<div class="contain">
+			<div class="classify">
+				<div class="cs">品牌</div>
+				<div class="cs">推荐</div>
+				<div class="cs">面料</div>
+				<div class="cs">主题</div>
+				<div class="cs">名品</div>
+				<div class="cs">搭配</div>
+				<div class="cs">私人售卖</div>
+			</div>
+			<div class="show">
+				<div class="pics">
+					<div class="all">
+						<div class="cover">面料</div>
+					</div>
+					<div class="row1">
+						<div class="left"></div>
+						<div class="right"></div>
+					</div>
+					<div class="row2">
+						<div class="left"></div>
+						<div class="right"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="nav">
+				<a href="index.html" class="home_page"></a>
+				<a href="classify.html" class="classify"></a>
+				<a href="order_index.html" class="order"></a>
+				<a href="bag.html" class="bag"></a>
+				<a href="mine.html" class="mine"></a>
+			</div>
+		</div>
+		<!--侧边栏-->
+		<div class="aside">
+			<div class="head_img"></div>
+			<div class="nickname">十里浅秋</div>
+			<div class="vip"></div>
+			<div class="list">
+				<div class="list_contain">红韵定制</div>
+				<div class="list_contain">名品旗袍</div>
+				<div class="list_contain">红女郎推荐</div>
+				<div class="list_contain">收藏</div>
+				<div class="list_contain">关于红韵</div>
+			</div>
+			<div class="icon">
+				<div class="icon1"></div>
+				<div class="icon2"></div>
+				<div class="icon3"></div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var flag = true;
+			$(".left").eq(0).click(function(){
+				if(flag){
+					$(".aside").animate({left:'0'},300);
+					$("header").animate({left:'5.9rem'},300);
+					$(".foot").animate({left:'5.9rem'},300)
+					$("body").on('touchmove',function(ev){
+						ev.preventDefault();
+					})
+					flag = !flag;
+				}else{
+					$(".aside").animate({left:'-5.9rem'},300);
+					$("header").animate({left:'0'},300);
+					$(".foot").animate({left:'0'},300);
+					$("body").off('touchmove');
+					flag = !flag;
+				}
+			});
+			$(".head_img").click(function(){
+				window.location.href = 'personal.html';
+			})
+			$(".vip").click(function(){
+				window.location.href = 'rate.html';
+			})
+			$(".right").eq(0).click(function(){
+				window.location.href = 'server.html';
+			})
+			$(".cs").eq(2).css('background-image','url(img/classify/choose.png)');
+			$(".cs").click(function(){
+				$(".cs").css('background-image','none');
+				var i = $(this).index();
+				$(".cs").eq(i).css('background-image','url(img/classify/choose.png)');
+				var txt = $(".cs").eq(i).html();
+				$(".cover").html(txt);
+				$(".row1").css('margin-top','2rem');
+				$(".row1").animate({marginTop:'0.15rem'},400)
+			})
+			$(".list_contain").eq(0).click(function(){
+				window.location.href = 'order_index.html';
+			})
+			$(".list_contain").eq(3).click(function(){
+				window.location.href = 'collection.html';
+			})
+		})
+	</script>
+</html>

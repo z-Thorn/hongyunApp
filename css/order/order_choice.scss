@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import "public_order.scss";
+.line{margin-top: 0.83rem;}
+//选料定款
+.choice{
+    width: 6.20rem;
+    height: 1.21rem;
+    margin: 0.61rem auto 0;
+    display: flex;
+    justify-content: space-between;
+    .fabric{
+        width: 1.74rem;
+        height: 1.21rem;
+        background: url(../../img/order/choose/xz/1.png)no-repeat;
+        background-size: 1.74rem 0.75rem;
+        border-bottom: 1px solid #A31515;
+    }
+    .style{
+        width: 1.74rem;
+        height: 1.21rem;
+        background: url(../../img/order/choose/mr/2.png)no-repeat;
+        background-size: 1.74rem 0.75rem;
+    }
+    .master{
+        width: 1.74rem;
+        height: 1.21rem;
+        background: url(../../img/order/choose/mr/3.png)no-repeat;
+        background-size: 1.74rem 0.75rem;
+    }
+}
+//面料
+.details{
+    width: 6.20rem;
+    height: 7.70rem;
+    margin: 0 auto;
+    overflow: auto;
+    background: url(../../img/order/choose/back.png)no-repeat;
+    background-size: 100% 100%;
+    .p1,.p2{
+        width: 100%;
+        margin-top: 0.42rem;
+        text-align: center;
+        font-size: 0.3rem;
+        color: #333333;
+    }
+    .p2{margin-top: 0.55rem;}
+    .material{
+        width: 4.62rem;
+        height: auto;
+        margin: 0.44rem auto 0;
+        .row{
+            width: 100%;
+            margin-bottom: 0.7rem;
+            font-size: 0.28rem;
+            color: #666666;
+            display: flex;
+            justify-content: space-between;
+            &:last-child{margin-bottom:0.55rem;}
+        }
+        .active{color: #A31515;}
+    }
+    .line_virtual{
+        width: 100%;
+        height: 0.02rem;
+        background: url(../../img/order/choose/line.png);
+        background-size: 100% 100%;
+    }
+    .topic{
+        width: 4.62rem;
+        margin: 0.44rem auto 0;
+        font-size: 0.28rem;
+        color: #666666;
+    }
+    .include{
+        width: 4.62rem;
+        margin: 0.27rem auto 0;
+        .variety{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.27rem;
+            .kind1,.kind2{
+                font-size: 0.28rem;
+                color: #666666;
+            }
+            .red1{
+                width: 0.5rem;
+                height: 0.5rem;
+                background: url(../../img/order/choose/red1.png)no-repeat;
+                background-size: 100% 100%;
+                margin-left: 0.15rem;
+                margin-right: 1.35rem;
+            }
+            .red2{
+                width: 0.5rem;
+                height: 0.5rem;
+                background: url(../../img/order/choose/red2.png)no-repeat;
+                background-size: 100% 100%;
+                margin-left: 0.15rem;
+            }
+        }
+    }
+}
+//咨询
+.question{
+    width: 6.20rem;
+    margin: 0.3rem auto 0;
+    display: block;
+    overflow: hidden;
+    span{
+        width: 0.3rem;
+        height: 0.31rem;
+        background: url(../../img/order/choose/question.png)no-repeat;
+        background-size: 100% 100%;
+        float: right;
+    }
+}
+//效果预览
+.preview{
+    position: relative;
+    width: 1.36rem;
+    height: 4.04rem;
+    margin: 0.54rem auto 0;
+    background: url(../../img/order/js/clothes.png)no-repeat;
+    background-size: 100% 100%;
+    .rotation{
+        position: absolute;
+        top: 1.7rem;
+        left: -1.1rem;
+        width: 3.37rem;
+        height: 0.54rem;
+        background: url(../../img/order/choose/rotate.png)no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.p3,.p4,.p5{
+    width: 100%;
+    font-size: 0.24rem;
+    color: #333333;
+    margin: 0;
+    text-align: center;
+}
+.p3{margin-top: 0.35rem;}
+//确定按钮
+.button{
+    width: 100%;
+    height: 2.54rem;
+    background: url(../../img/order/choose/sure.png)no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0.44rem;
+}

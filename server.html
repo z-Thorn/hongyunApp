@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>客服</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/server/server.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--<div class="top"></div>-->
+		<div class="return"></div>
+		<p class="title">小雅</p>
+		<div class="commodity"></div>
+		<div class="er-g"></div>
+		<div class="chat">
+			<span class="expression"></span>
+			<input type="text" name="txt" id="txt" value="" />
+			<span class="voice"></span>
+			<button id="btn">发送</button>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$(".return").click(function(){
+				history.back();
+			})
+			$(document).on('keypress', '#txt', function (e) { 
+				if (e.which == 13) { 
+					$('#btn').click();
+				} 
+			}); 
+				
+			var er_key = '787af310c4104a4699112483718107f3';//填写你的 API KEY 
+			$(document).on('click', '#btn', function () { 
+				var a = $('.er-g'), b = $('#txt'), c = $('#txt').val(), d = $('body'); 
+				a.before('<div class="reply"><div class="msg">'+ c +'</div><div class="head_img"></div></div>');
+		        window.scrollTo(0,d.height());
+				b.val(''); 
+				$.getJSON('http://www.tuling123.com/openapi/api?key=' + er_key + '&info=' + c, function (data) { 
+					a.before('<div class="server"><div class="head_img"></div><div class="msg">' + data.text + '</div></div>');
+		            window.scrollTo(0,d.height());
+				});
+			})
+		})
+	</script>
+</html>

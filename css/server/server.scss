@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import "../order/public_order.scss";
+body{margin-bottom: 1rem;}
+.commodity{
+    width: 100%;
+    height: 1.3rem;
+    margin-top: 0.5rem;
+    background: url(../../img/server/sp.png)no-repeat;
+    background-size: 100% 100%;
+}
+.server{
+    width: 6.5rem;
+    margin: 0.93rem auto 0;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    .msg{
+        display: flex;
+        align-items: center;
+        background: #FFFCF8;
+        font-size: 0.35rem;
+        text-align: left;
+        border-radius: 0.3rem;
+    }
+    .head_img{
+        width: 0.92rem;
+        height: 0.92rem;
+        background: url(../../img/server/tx1.png)no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.reply{
+    width: 6.5rem;
+    margin: 0.93rem auto 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    .msg{
+        display: flex;
+        align-items: center;
+        background: #FFFCF8;
+        font-size: 0.35rem;
+        text-align: left;
+        border-radius: 0.3rem;
+    }
+    .head_img{
+        width: 0.92rem;
+        height: 0.92rem;
+        background: url(../../img/server/tx.jpg)no-repeat;
+        background-size: 100% 100%;
+        border-radius: 0.5rem;
+    }
+}
+.chat{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .voice{
+        width: 0.56rem;
+        height: 0.56rem;
+        background: url(../../img/server/voice.png)no-repeat;
+        background-size: 100% 100%;
+    }
+    input{
+        width: 5.19rem;
+        height: 0.75rem;
+        background: url(../../img/server/input.png)no-repeat;
+        background-size: 100% 100%;
+        font-size: 0.35rem;
+        outline: medium;
+        border: none;
+    }
+    .expression{
+        width: 0.56rem;
+        height: 0.56rem;
+        background: url(../../img/server/face.png)no-repeat;
+        background-size: 100% 100%;
+    }
+    button{
+        width: 1.25rem;
+        height: 0.75rem;
+        font-size: 0.28rem;
+    }
+}

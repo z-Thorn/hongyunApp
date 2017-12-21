@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>我的</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mine/mine.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<!--<div class="top"></div>-->
+			<div class="head_img"></div>
+			<span class="nickname">十里浅秋</span>
+			<span class="vip"></span>
+		</div>
+		<div class="order_form">
+			<div class="left">
+				<div class="top">
+					<div class="top_left"></div>
+					<div class="top_right"></div>
+				</div>
+				<div class="bottom">
+					<div class="bottom_left"></div>
+					<div class="bottom_right"></div>
+				</div>
+			</div>
+			<div class="right"></div>
+		</div>
+		<div class="row1">
+			<div class="row_in">
+				<div class="name">会员中心</div>
+				<div class="logo"></div>
+			</div>
+		</div>
+		<div class="row2">
+			<div class="row_in">
+				<div class="name">我的定制</div>
+				<div class="logo"></div>
+			</div>
+		</div>
+		<div class="row3">
+			<div class="row_in">
+				<div class="name">我的收藏</div>
+				<div class="logo"></div>
+			</div>
+		</div>
+		<div class="row4">
+			<div class="row_in">
+				<div class="name">我的售卖</div>
+				<div class="logo"></div>
+			</div>
+		</div>
+		<div class="row5">
+			<div class="row_in">
+				<div class="name">我的拍卖</div>
+				<div class="logo"></div>
+			</div>
+		</div>
+		<div class="row6">
+			<div class="row_in">
+				<div class="name">优惠券</div>
+				<div class="logo"></div>
+			</div>
+		</div>
+		<div class="row7">
+			<div class="row_in">
+				<div class="name">信用卡分期</div>
+				<div class="logo"></div>
+			</div>
+		</div>
+		<div class="row8">
+			<div class="row_in">
+				<div class="name">红韵客服</div>
+				<div class="logo"></div>
+			</div>
+		</div>
+		<div class="row9">
+			<div class="row_in">
+				<div class="name">意见反馈</div>
+				<div class="logo"></div>
+			</div>
+		</div>
+		<div class="row10">
+			<div class="row_in">
+				<div class="name">设置</div>
+				<div class="logo"></div>
+			</div>
+		</div>
+		<!--固定到底部导航-->
+		<div class="foot">
+			<div class="nav">
+				<a href="index.html" class="home_page"></a>
+				<a href="classify.html" class="classify"></a>
+				<a href="order_index.html" class="order"></a>
+				<a href="bag.html" class="bag"></a>
+				<a href="mine.html" class="mine"></a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".row_in").eq(0).click(function(){
+				window.location.href = 'rate.html';
+			})
+			$(".row_in").eq(1).click(function(){
+				window.location.href = 'order_index.html';
+			})
+			$(".row_in").eq(2).click(function(){
+				window.location.href = 'collection.html';
+			})
+			$(".row_in").eq(7).click(function(){
+				window.location.href = 'server.html';
+			})
+			$(".head_img").click(function(){
+				window.location.href = 'personal.html';
+			})
+			$(".vip").click(function(){
+				window.location.href = 'rate.html';
+			})
+		})
+	</script>
+</html>

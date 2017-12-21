@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>收藏页</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/collection/collection2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--<div class="top"></div>-->
+		<div class="return"></div>
+		<p class="title">收藏</p>
+		<div class="swiper-container" style="margin-top: 0.5rem;">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide"><div class="img_one"></div></div>
+			    <div class="swiper-slide" id="delete1"><div class="img_delete"></div></div>
+			  </div>
+		</div>
+		<div class="swiper-container" style="margin-top: 0.2rem;">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide"><div class="img_two"></div></div>
+			    <div class="swiper-slide" id="delete2"><div class="img_delete"></div></div>
+			  </div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var mySwiper = new Swiper('.swiper-container', {
+				slidesPerView: 'auto',
+				spaceBetween : 0,
+				resistanceRatio: 0
+			});
+			$(".return").click(function(){
+				history.back();
+			})
+			$("#delete1").click(function(){
+				$(this).closest(".swiper-container").remove();
+			})
+			$("#delete2").click(function(){
+				$(this).closest(".swiper-container").remove();
+			})
+		})
+	</script>
+</html>
+

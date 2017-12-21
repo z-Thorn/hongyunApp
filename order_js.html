@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>定制--结算</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/order/order_js.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--<div class="top"></div>-->
+		<span class="return"></span>
+		<p class="title">定金支付</p>
+		<div class="more"></div>
+		<div class="spread"></div>
+		<div class="sale">
+			<div class="sample"></div>
+			<div class="info">
+				<p>【陶玉梅·百年花开】</p>
+				<p></p>
+				<p>长款月牙袖</p>
+				<p>香云纱群芳紫桔梗苏绣</p>
+				<p>中式复古连襟旗袍</p>
+			</div>
+			<div class="intro"></div>
+			<div class="price">
+				<div class="span">
+					<span class="word">估价：</span>
+					<span class="num">￥2,397</span>
+				</div>
+			</div>
+			<div class="question"></div>
+		</div>
+		<!--订金结算部分-->
+		<div class="tail">
+			<div class="deposit">
+				<div class="span">
+					<span class="word">订金：</span>
+					<span class="num">￥799</span>
+				</div>
+			</div>
+		</div>
+		<span class="annotation">订金为总价30%</span>
+		<!--底部结算-->
+		<div class="footer">
+			<div class="server"></div>
+			<div class="bag"></div>
+			<div class="add"></div>
+			<div class="pay"></div>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$(".return").click(function(){
+				history.back();
+			})
+			var num = 0;
+			$(".more").click(function(){
+				num++;
+				if((num%2)!=0){
+					$(".spread").css('display','block');
+				}else{
+					$(".spread").css('display','none');
+				}
+			})
+			$(".spread").click(function(){
+				window.location.href = 'collection.html';
+			})
+			$(".server").click(function(){
+				window.location.href = 'server.html';
+			})
+			$(".bag").click(function(){
+				window.location.href = 'bag.html';
+			})
+		})
+	</script>
+</html>

@@ -1,0 +1,353 @@
+body {
+  background: #fcf5eb;
+  position: relative; }
+
+.cover {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none; }
+
+.top {
+  position: fixed;
+  z-index: 999;
+  top: 0.1rem;
+  left: 0;
+  width: 100%;
+  height: 0.24rem;
+  background: url(../../img/index/head.png) no-repeat center;
+  background-size: 7.27rem 0.24rem; }
+
+.including {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 0; }
+
+.bottom {
+  width: 100%;
+  height: 0.63rem;
+  padding-top: 0.57rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .bottom .left {
+    width: 0.39rem;
+    height: 0.34rem;
+    background: url(../../img/index/nav/menu.png) no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-right: 0.56rem; }
+  .bottom .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.2rem;
+    height: 0.63rem;
+    background: url(../../img/index/nav/search.png) no-repeat;
+    background-size: 100% 100%;
+    float: left; }
+    .bottom .middle input {
+      width: 1.44rem;
+      height: 0.22rem;
+      font-size: 0.22rem;
+      color: #979491;
+      border: none;
+      outline: medium;
+      background: #fcf5eb; }
+  .bottom .right {
+    width: 0.47rem;
+    height: 0.42rem;
+    background: url(../../img/index/nav/message.png) no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-left: 0.59rem; }
+
+.aside {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  left: -5.9rem;
+  width: 5.9rem;
+  height: 13.34rem;
+  background: url(../../img/index/ct/background.png) no-repeat;
+  background-size: 100% 100%; }
+  .aside .head_img {
+    position: absolute;
+    top: 1.5rem;
+    left: 0.6rem;
+    width: 1.61rem;
+    height: 1.60rem;
+    background: url(../../img/index/ct/head_portrait.png) no-repeat;
+    background-size: 100% 100%; }
+  .aside .nickname {
+    position: absolute;
+    top: 2rem;
+    left: 2.61rem;
+    font-size: 0.26rem;
+    color: #333333; }
+  .aside .vip {
+    position: absolute;
+    top: 2.35rem;
+    left: 2.52rem;
+    width: 1.22rem;
+    height: 0.39rem;
+    background: url(../../img/index/ct/viop.png) no-repeat;
+    background-size: 100% 100%; }
+  .aside .list {
+    width: 5.3rem;
+    height: auto;
+    padding-top: 4rem;
+    margin-left: 0.6rem; }
+    .aside .list .list_contain {
+      width: 2rem;
+      height: 0.7rem;
+      font-size: 0.32rem;
+      color: #333333;
+      line-height: 0.7rem;
+      margin-bottom: 0.75rem; }
+  .aside .icon {
+    margin-left: 0.6rem;
+    width: 3.83rem;
+    height: 0.47rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .aside .icon .icon1 {
+      width: 0.45rem;
+      height: 0.45rem;
+      background: url(../../img/index/ct/settlement.png) no-repeat;
+      background-size: 100% 100%; }
+    .aside .icon .icon2 {
+      width: 0.47rem;
+      height: 0.47rem;
+      background: url(../../img/index/ct/night.png) no-repeat;
+      background-size: 100% 100%; }
+    .aside .icon .icon3 {
+      width: 0.56rem;
+      height: 0.45rem;
+      background: url(../../img/index/ct/Scan_code.png) no-repeat;
+      background-size: 100% 100%; }
+
+.swiper-container {
+  width: 100%;
+  height: 6.25rem;
+  margin-top: 0.13rem; }
+  .swiper-container .swiper-slide:nth-child(1) {
+    background: url(../../img/index/banner/banner1.png) no-repeat;
+    background-size: 100% 100%; }
+  .swiper-container .swiper-slide:nth-child(2) {
+    background: url(../../img/index/banner/banner2.png) no-repeat;
+    background-size: 100% 100%; }
+  .swiper-container .swiper-slide:nth-child(3) {
+    background: url(../../img/index/banner/banner3.png) no-repeat;
+    background-size: 100% 100%; }
+  .swiper-container .swiper-slide:nth-child(4) {
+    background: url(../../img/index/banner/banner4.png) no-repeat;
+    background-size: 100% 100%; }
+  .swiper-container .swiper-slide:nth-child(5) {
+    background: url(../../img/index/banner/banner5.png) no-repeat;
+    background-size: 100% 100%; }
+  .swiper-container .swiper-pagination-bullet {
+    background: #333333; }
+
+.new {
+  width: 6.5rem;
+  display: flex;
+  margin: 0.32rem auto 0.58rem;
+  justify-content: space-between; }
+  .new .new1 {
+    width: 0.95rem;
+    height: 1.49rem;
+    background: url(../../img/index/new/specified.png) no-repeat;
+    background-size: 100% 100%; }
+  .new .new2 {
+    width: 0.95rem;
+    height: 1.49rem;
+    background: url(../../img/index/new/choice.png) no-repeat;
+    background-size: 100% 100%; }
+  .new .new3 {
+    width: 0.95rem;
+    height: 1.49rem;
+    background: url(../../img/index/new/custom.png) no-repeat;
+    background-size: 100% 100%; }
+  .new .new4 {
+    width: 0.95rem;
+    height: 1.49rem;
+    background: url(../../img/index/new/clothing_collocation.png) no-repeat;
+    background-size: 100% 100%; }
+
+.box {
+  width: 6.5rem;
+  height: 2.12rem;
+  margin: 0 auto 0.72rem;
+  background: url(../../img/index/new/rentangle.png) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .box .discount_coupon {
+    width: 6.12rem;
+    height: 1.84rem;
+    display: flex;
+    justify-content: space-between; }
+    .box .discount_coupon .discount_coupon1, .box .discount_coupon .discount_coupon2, .box .discount_coupon .discount_coupon3 {
+      width: 1.98rem;
+      height: 1.84rem; }
+    .box .discount_coupon .discount_coupon1 {
+      background: url(../../img/index/new/100.png) no-repeat;
+      background-size: 100% 100%; }
+    .box .discount_coupon .discount_coupon2 {
+      background: url(../../img/index/new/300.png) no-repeat;
+      background-size: 100% 100%; }
+    .box .discount_coupon .discount_coupon3 {
+      background: url(../../img/index/new/500.png) no-repeat;
+      background-size: 100% 100%; }
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.98rem;
+  margin-top: 0.34rem;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  padding: 0; }
+  .nav li {
+    list-style: none;
+    display: inline-block; }
+    .nav li a {
+      display: block; }
+    .nav li:nth-child(1) a {
+      width: 0.43rem;
+      height: 0.70rem;
+      background: url(../../img/index/tab/xz/home.png) no-repeat center;
+      background-size: 0.43rem 0.70rem;
+      padding-left: 0.38rem;
+      padding-right: 0.3rem;
+      margin-right: 0.32rem; }
+    .nav li:nth-child(2) a {
+      width: 0.48rem;
+      height: 0.62rem;
+      background: url(../../img/index/tab/mr/classify.png) no-repeat center;
+      background-size: 0.48rem 0.62rem;
+      padding: 0 0.3rem;
+      margin-right: 0.32rem; }
+    .nav li:nth-child(3) a {
+      width: 0.42rem;
+      height: 0.70rem;
+      background: url(../../img/index/tab/mr/custom.png) no-repeat center;
+      background-size: 0.42rem 0.70rem;
+      padding: 0 0.3rem;
+      margin-right: 0.32rem; }
+    .nav li:nth-child(4) a {
+      width: 0.64rem;
+      height: 0.69rem;
+      background: url(../../img/index/tab/mr/shopping-bag.png) no-repeat center;
+      background-size: 0.64rem 0.69rem;
+      padding: 0 0.3rem;
+      margin-right: 0.32rem; }
+    .nav li:nth-child(5) a {
+      width: 0.42rem;
+      height: 0.70rem;
+      background: url(../../img/index/tab/mr/my.png) no-repeat center;
+      background-size: 0.42rem 0.70rem;
+      padding-left: 0.3rem;
+      padding-right: 0.38rem; }
+
+.show1 {
+  width: 100%;
+  height: 4.18rem;
+  background: url(../../img/index/topic.png) no-repeat;
+  background-size: 100% 100%; }
+
+.show2 {
+  width: 100%;
+  height: 4rem;
+  background: url(../../img/index/new.png) no-repeat;
+  background-size: 100% 100%; }
+
+.show3 {
+  width: 100%;
+  height: 4.24rem;
+  background: url(../../img/index/brand.png) no-repeat;
+  background-size: 100% 100%; }
+
+.show4 {
+  width: 100%;
+  height: 4rem;
+  background: url(../../img/index/theme.png) no-repeat;
+  background-size: 100% 100%; }
+
+.show5 {
+  width: 100%;
+  height: 4.66rem;
+  background: url(../../img/index/recommend.png) no-repeat;
+  background-size: 100% 100%; }
+
+.show2, .show3, .show4, .show5 {
+  margin-top: 0.25rem; }
+
+.line {
+  position: relative;
+  width: 2.7rem;
+  height: 0.01rem;
+  background: #333333;
+  margin: 0.4rem auto; }
+  .line span {
+    position: absolute;
+    top: -0.15rem;
+    left: 0.5rem;
+    font-size: 0.24rem;
+    color: #333333;
+    padding: 0 0.13rem;
+    background: #fcf5eb; }
+
+.commodity {
+  width: 6.49rem;
+  height: 5.14rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  .commodity .left, .commodity .right {
+    width: 3.2rem;
+    height: 5.14rem; }
+  .commodity .left {
+    background: url(../../img/index/tj/7.png) no-repeat;
+    background-size: 100% 100%; }
+  .commodity .right {
+    background: url(../../img/index/tj/8.png) no-repeat;
+    background-size: 100% 100%; }
+  .commodity:nth-child(2), .commodity:nth-child(3), .commodity:nth-child(4) {
+    margin-top: 0.45rem; }
+  .commodity:nth-child(1) .left {
+    background: url(../../img/index/tj/1.png) no-repeat;
+    background-size: 100% 100%; }
+  .commodity:nth-child(1) .right {
+    background: url(../../img/index/tj/2.png) no-repeat;
+    background-size: 100% 100%; }
+  .commodity:nth-child(2) .left {
+    background: url(../../img/index/tj/3.png) no-repeat;
+    background-size: 100% 100%; }
+  .commodity:nth-child(2) .right {
+    background: url(../../img/index/tj/4.png) no-repeat;
+    background-size: 100% 100%; }
+  .commodity:nth-child(3) .left {
+    background: url(../../img/index/tj/5.png) no-repeat;
+    background-size: 100% 100%; }
+  .commodity:nth-child(3) .right {
+    background: url(../../img/index/tj/6.png) no-repeat;
+    background-size: 100% 100%; }
+  .commodity:nth-child(4) .left {
+    background: url(../../img/index/tj/7.png) no-repeat;
+    background-size: 100% 100%; }
+  .commodity:nth-child(4) .right {
+    background: url(../../img/index/tj/8.png) no-repeat;
+    background-size: 100% 100%; }

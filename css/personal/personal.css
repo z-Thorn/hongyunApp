@@ -1,0 +1,139 @@
+body {
+  background: #fcf5eb;
+  position: relative; }
+
+p {
+  margin: 0; }
+
+.top {
+  position: fixed;
+  top: 0.1rem;
+  width: 7.50rem;
+  height: 0.24rem;
+  background: url(../../img/index/head.png) no-repeat center;
+  background-size: 7.27rem 0.24rem; }
+
+.return {
+  position: absolute;
+  top: 0.76rem;
+  left: 0.65rem;
+  width: 0.2rem;
+  height: 0.36rem;
+  background: url(../../img/order/sy/arrow.png) no-repeat;
+  background-size: 100% 100%; }
+
+.title {
+  width: 100%;
+  font-size: 0.36rem;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  padding-top: 0.74rem; }
+
+.line {
+  position: relative;
+  width: 2.7rem;
+  height: 0.01rem;
+  margin: 0 auto;
+  background: #333333; }
+  .line span {
+    height: 0.33rem;
+    font-size: 0.34rem;
+    color: #333333;
+    position: absolute;
+    top: -0.23rem;
+    left: 0.31rem;
+    padding: 0 0.37rem;
+    background: #fcf5eb; }
+
+body {
+  position: relative;
+  width: 100%;
+  height: 13.34rem;
+  background: url(../../img/personal/ios/back.png) no-repeat;
+  background-size: 100% 100%; }
+
+.topic {
+  position: absolute;
+  top: 1.69rem;
+  left: 0.67rem;
+  font-size: 0.56rem;
+  font-weight: bold;
+  color: #333333; }
+
+.head_img {
+  position: absolute;
+  top: 2.68rem;
+  left: 0.65rem;
+  width: 1.93rem;
+  height: 1.93rem;
+  background: url(../../img/personal/ios/tx.png) no-repeat;
+  background-size: 100% 100%; }
+
+.vip {
+  position: absolute;
+  top: 3.63rem;
+  left: 2.88rem;
+  width: 1.22rem;
+  height: 0.39rem;
+  background: url(../../img/personal/ios/viop.png) no-repeat;
+  background-size: 100% 100%; }
+
+.contain {
+  width: 100%;
+  height: auto;
+  padding-top: 5.22rem;
+  border-bottom: 1px solid #e8e1d8; }
+  .contain .size {
+    width: 6.86rem;
+    height: auto;
+    margin-top: 0.29rem;
+    margin-left: 0.64rem; }
+    .contain .size .box {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 1.27rem;
+      border-bottom: 1px solid #e8e1d8; }
+      .contain .size .box .height {
+        width: 100%;
+        height: 0.32rem;
+        display: block; }
+        .contain .size .box .height .left {
+          font-size: 0.32rem;
+          color: #333333;
+          float: left; }
+        .contain .size .box .height .right {
+          height: 0.30rem;
+          float: right;
+          margin-right: 0.66rem; }
+          .contain .size .box .height .right span {
+            font-size: 0.3rem;
+            color: #666666;
+            float: left;
+            line-height: 0.3rem; }
+          .contain .size .box .height .right .go {
+            width: 0.16rem;
+            height: 0.28rem;
+            background: url(../../img/order/cl/arrow_right.png) no-repeat;
+            background-size: 100% 100%;
+            float: left;
+            margin-left: 0.35rem; }
+
+.change {
+  position: absolute;
+  bottom: 0.74rem;
+  right: 0.63rem;
+  height: 0.3rem;
+  font-size: 0;
+  display: flex; }
+  .change span {
+    font-size: 0.3rem;
+    color: #666666;
+    line-height: 0.3rem; }
+  .change .icon {
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../../img/personal/ios/change.png) no-repeat;
+    background-size: 100% 100%;
+    margin-left: 0.25rem; }

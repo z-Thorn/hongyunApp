@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>密码设置</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login_register/psw_setting.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<!--<div class="top"></div>-->
+		<!--返回箭头-->
+		<div class="return"></div>
+		<input type="password" name="" id="psw" value="" placeholder="123-4567-8978"/>
+		<span class="alert_pass"></span>
+		<div class="line"></div>
+		<div class="check">
+			<span class="choose"><img src="img/login_register2/login/ios/choose.png"/></span>
+			<span class="display">显示密码</span>
+		</div>
+		<span class="judge"></span>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".return").click(function(){
+				history.back();
+			})
+			var flag = true;
+			$(".choose").click(function(){
+				if(flag){
+					$("img").css('display','block');
+					$("#psw").attr('type','text');
+					flag = !flag;
+				}else{
+					$("img").css('display','none');
+					$("#psw").attr('type','password');
+					flag = !flag;
+				}
+			})
+			$("#psw").blur(function(){
+				$(".judge").css('background-image','url(img/login_register2/password/ios/deep.png)');
+			})
+			$(".judge").click(function(){
+				var psw =$("#psw").val();
+				var aa=new RegExp("(?![a-z]+$|[0-9]+$)^[a-zA-Z0-9]{6,16}$");
+				if(psw==''){
+					$(".alert_pass").css('display','block');
+					$(".alert_pass").html('密码不能为空！');
+				}else if(!aa.test(psw)){
+					$(".alert_pass").css('display','block');
+					$(".alert_pass").html('密码格式错误！');
+				}else{
+					localStorage.setPass = psw;
+					window.location.href = 'login.html';
+				}
+			})
+		})
+	</script>
+</html>

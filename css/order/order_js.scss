@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import "public_order.scss";
+body{
+    width: 100%;
+    height: 13.34rem;
+    background: url(../../img/order/js/bj.png)no-repeat center;
+    background-size: 100% 100%;
+}
+.more{
+    position: absolute;
+    top: 0.63rem;
+    right: 0.65rem;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url(../../img/order/js/add.png)no-repeat;
+    background-size: 100% 100%;
+}
+.spread{
+    position: absolute;
+    top: 1.16rem;
+    right: 0.7rem;
+    width: 1.9rem;
+    height: 2.58rem;
+    background: url(../../img/order/js/spread.png)no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+.sale{
+    position: relative;
+    width: 6.32rem;
+    height: 8.22rem;
+    background: url(../../img/order/js/rectangle.png)no-repeat;
+    background-size: 100% 100%;
+    margin: 0.53rem auto 0.72rem;
+    overflow: hidden;
+    .sample{
+        position: absolute;
+        top: 0.37rem;
+        left: 0.98rem;
+        width: 1.36rem;
+        height: 4.04rem;
+        background: url(../../img/order/js/clothes.png)no-repeat;
+        background-size: 100% 100%;
+    }
+    .info{
+        position: absolute;
+        top: 1.9rem;
+        left: 2.72rem;
+        p{
+            font-size: 0.24rem;
+            color: #333333;
+            margin: 0;
+            &:first-child{font-size: 0.26rem;} 
+            &:nth-child(2){
+                width: 1.24rem;
+                height: 0.01rem;
+                background: #333333;
+                margin-top: 0.22rem;
+                margin-bottom: 0.33rem;
+            }
+            &:nth-child(3),&:nth-child(4),&:nth-child(5){margin-bottom: 0.1rem;}
+        }
+    }
+    .intro{
+        width: 4.60rem;
+        height: 2rem;
+        margin: 4.82rem auto 0;
+        background: url(../../img/order/js/words.png)no-repeat;
+        background-size: 100% 100%;
+    }
+    .price{
+        width: 4.59rem;
+        margin: 0.23rem auto 0;
+        display: block;
+        overflow: hidden;
+        .span{
+            float: right;
+            font-size: 0;
+            .word{
+                font-size: 0.36rem;
+                color: #333333;
+            }
+            .num{
+                font-size: 0.4rem;
+                color: #A31515;
+            }
+        }
+    }
+    .question{
+        position: absolute;
+        bottom: 0.25rem;
+        right: 0.3rem;
+        width: 0.3rem;
+        height: 0.31rem;
+        background: url(../../img/order/cl/question.png)no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.tail{
+    width: 100%;
+    overflow: hidden;
+    .deposit{
+        width: 6.10rem;
+        margin: 0.35rem auto 0;
+        display: block;
+        overflow: hidden;
+        .span{
+            float: right;
+            font-size: 0;
+            .word{
+                font-size: 0.50rem;
+                color: #333333;
+            }
+            .num{
+                font-size: 0.52rem;
+                font-weight: bold;
+                color: #A31515;
+            }
+        }
+    }
+}
+.annotation{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2.3rem;
+    font-size: 0.28rem;
+    color: #979491;
+}
+ .footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 0.98rem;
+        display: flex;
+        align-items: center;
+        .server{
+            width: 1rem;
+            height: 0.98rem;
+            background: url(../../img/order/js/server.png)no-repeat center;
+            background-size: 0.64rem 0.71rem;
+            margin-left: 0.43rem;
+        }
+        .bag{
+            width: 1rem;
+            height: 0.98rem;
+            background: url(../../img/order/js/bag.png)no-repeat center;
+            background-size: 0.64rem 0.71rem;
+            margin-left: 0.26rem;
+        }
+        .add{
+            width: 2.15rem;
+            height: 0.98rem;
+            background: url(../../img/order/js/addin.png)no-repeat;
+            background-size: 100% 100%;
+            margin-left: 0.51rem;
+        }
+        .pay{
+            width: 2.15rem;
+            height: 0.98rem;
+            background: url(../../img/order/js/js.png)no-repeat;
+            background-size: 100% 100%;
+        }
+    }

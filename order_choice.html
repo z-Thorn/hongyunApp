@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>定制--选择</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/order/order_choice.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/order_choice.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<!--<div class="top"></div>-->
+		<!--返回首页-->
+		<span class="return"></span>
+		<p class="title">选料定款</p>
+		<div class="line">
+			<span>选料定款</span>
+		</div>
+		<div class="choice">
+			<div class="fabric"></div>
+			<div class="style"></div>
+			<div class="master"></div>
+		</div>
+		<div class="details">
+			<p class="p1">面料</p>
+			<div class="material">
+				<div class="row">
+					<div class="cl">真丝</div>
+					<div class="cl">桑波缎</div>
+					<div class="cl">素绉缎</div>
+				</div>
+				<div class="row">
+					<div class="cl">杭罗</div>
+					<div class="cl">双宫绸</div>
+					<div class="cl">古香缎</div>
+				</div>
+				<div class="row">
+					<div class="cl">丝绒</div>
+					<div class="cl active">香云纱</div>
+					<div class="cl">织绵缎</div>
+				</div>
+				<div class="row">
+					<div class="cl">棉麻</div>
+					<div class="cl">桑蚕丝</div>
+					<div class="cl">柞蚕丝</div>
+				</div>
+			</div>
+			<div class="line_virtual"></div>
+			<p class="p2">色系</p>
+			<div class="topic">红色系</div>
+			<div class="include">
+				<div class="variety">
+					<div class="kind1">勃艮第酒红</div>
+					<div class="red1"></div>
+					<div class="kind2">锈红</div>
+					<div class="red2"></div>
+				</div>
+				<div class="variety">
+					<div class="kind1">勃艮第酒红</div>
+					<div class="red1"></div>
+					<div class="kind2">锈红</div>
+					<div class="red2"></div>
+				</div>
+			</div>
+		</div>
+		<div class="question">
+			<span></span>
+		</div>
+		<div class="line" style="margin-top: 0.22rem;">
+			<span>效果预览</span>
+		</div>
+		<div class="preview">
+			<div class="rotation"></div>
+		</div>
+		<p class="p3">长款月牙袖</p>
+		<p class="p4">香云纱群芳紫桔梗苏绣</p>
+		<p class="p5">中式复古连襟旗袍</p>
+		<!--确定按钮-->
+		<div class="button"></div>
+	</body>
+	<script>
+		$(function(){
+			$(".return").click(function(){
+				window.location.href = 'order_index.html';
+			})
+			$(".button").click(function(){
+				window.location.href = 'order_js.html';
+			})
+			$(".cl").click(function(){
+				$(".cl").css('color','#666666');
+				$(this).css('color','#A31515');
+			})
+			$(".fabric").click(function(){
+				$(this).css({
+					'background':'url(img/order/choose/xz/1.png) no-repeat',
+					'background-size':'1.74rem 0.75rem',
+					'border-bottom': '1px solid #A31515'
+				});
+				$(".style").css({
+					'background':'url(img/order/choose/mr/2.png) no-repeat',
+					'background-size':'1.74rem 0.75rem',
+					'border-bottom': 'none'
+				})
+				$(".master").css({
+					'background':'url(img/order/choose/mr/3.png) no-repeat',
+					'background-size':'1.74rem 0.75rem',
+					'border-bottom': 'none'
+				})
+			})
+			$(".style").click(function(){
+				$(this).css({
+					'background':'url(img/order/choose/xz/2.png) no-repeat',
+					'background-size':'1.74rem 0.75rem',
+					'border-bottom': '1px solid #A31515'
+				});
+				$(".fabric").css({
+					'background':'url(img/order/choose/mr/1.png) no-repeat',
+					'background-size':'1.74rem 0.75rem',
+					'border-bottom': 'none'
+				})
+				$(".master").css({
+					'background':'url(img/order/choose/mr/3.png) no-repeat',
+					'background-size':'1.74rem 0.75rem',
+					'border-bottom': 'none'
+				})
+			})
+			$(".master").click(function(){
+				$(this).css({
+					'background':'url(img/order/choose/xz/3.png) no-repeat',
+					'background-size':'1.74rem 0.75rem',
+					'border-bottom': '1px solid #A31515'
+				});
+				$(".style").css({
+					'background':'url(img/order/choose/mr/2.png) no-repeat',
+					'background-size':'1.74rem 0.75rem',
+					'border-bottom': 'none'
+				})
+				$(".fabric").css({
+					'background':'url(img/order/choose/mr/1.png) no-repeat',
+					'background-size':'1.74rem 0.75rem',
+					'border-bottom': 'none'
+				})
+			})
+		})
+		scrollBottomTest();
+	</script>
+</html>

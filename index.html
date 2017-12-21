@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+		<script type="text/javascript" src="js/infinite_index.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=OQjZGkWKAqPbS142BO0lSkMwWEtlcwMV"></script>
+	</head>
+	<body>
+		<!--百度API定位-->
+		<div id="allmap"></div>
+		<!--<div class="top"></div>-->
+		<div class="including">
+			<div class="bottom">
+				<div class="left"></div>
+				<div class="middle">
+					<input type="text" name="" id="in" value="" placeholder="搜索：香云纱"/>
+				</div>
+				<div class="right"></div>
+			</div>
+			<!--轮播-->
+			<div class="swiper-container">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide"></div>
+			    <div class="swiper-slide"></div>
+			    <div class="swiper-slide"></div>
+			    <div class="swiper-slide"></div>
+			    <div class="swiper-slide"></div>
+			  </div>
+			  <div class="swiper-pagination"></div>
+			</div>
+			<!--新人各种-->
+			<div class="new">
+				<div class="new1"></div>
+				<div class="new2"></div>
+				<div class="new3"></div>
+				<div class="new4"></div>
+			</div>
+			<!--优惠券区域-->
+			<div class="box">
+				<div class="discount_coupon">
+					<div class="discount_coupon1"></div>
+					<div class="discount_coupon2"></div>
+					<div class="discount_coupon3"></div>
+				</div>
+			</div>
+			<!--旗袍展示-->
+			<div class="show1"></div>
+			<div class="show2"></div>
+			<div class="show3"></div>
+			<div class="show4"></div>
+			<div class="show5"></div>
+			<div class="line"><span>你可能会喜欢</span></div>
+			<!--商品信息-->
+			<div class="include">
+				<div class="commodity">
+					<div class="left"></div>
+					<div class="right"></div>
+				</div>
+				<div class="commodity">
+					<div class="left"></div>
+					<div class="right"></div>
+				</div>
+				<div class="commodity">
+					<div class="left"></div>
+					<div class="right"></div>
+				</div>
+				<div class="commodity">
+					<div class="left"></div>
+					<div class="right"></div>
+				</div>
+			</div>
+			<!--底部导航-->
+			<ul class="nav">
+				<li><a href="index.html"></a></li>
+				<li><a href="classify.html"></a></li>
+				<li><a href="order_index.html"></a></li>
+				<li><a href="bag.html"></a></li>
+				<li><a href="mine.html"></a></li>
+			</ul>
+			<div class="cover"></div>
+		</div>
+		<!--侧边栏-->
+		<div class="aside">
+			<div class="head_img"></div>
+			<div class="nickname">十里浅秋</div>
+			<div class="vip"></div>
+			<div class="list">
+				<div class="list_contain">红韵定制</div>
+				<div class="list_contain">名品旗袍</div>
+				<div class="list_contain">红女郎推荐</div>
+				<div class="list_contain">收藏</div>
+				<div class="list_contain">关于红韵</div>
+			</div>
+			<div class="icon">
+				<div class="icon1"></div>
+				<div class="icon2"></div>
+				<div class="icon3"></div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			// 百度地图API功能
+			var map = new BMap.Map("allmap");
+			var point = new BMap.Point(116.331398,39.897445);
+			map.centerAndZoom(point,12);
+			function myFun(result){
+				var cityName = result.name;
+				map.setCenter(cityName);
+				if(localStorage.map == 1){
+					alert("当前定位城市:"+cityName);
+					localStorage.map = 0;
+				}
+			}
+			var myCity = new BMap.LocalCity();
+			myCity.get(myFun);
+			//轮播
+			var mySwiper = new Swiper('.swiper-container', {
+				pagination : '.swiper-pagination',
+				autoplay: 1500,
+				autoplayDisableOnInteraction : false,
+			});
+			$(".left").eq(0).click(function(){
+				$(".aside").animate({left:'0'},300);
+				$(".including").animate({left:'5.9rem'},300);
+				$("body").css('overflow','hidden');
+				$(".cover").css('display','block');
+				mySwiper.stopAutoplay();
+				$("body").on('touchmove',function(ev){
+					ev.preventDefault();
+				})
+			});
+			$(".cover").click(function(){
+				$(".aside").animate({left:'-5.9rem'},300);
+				$(".including").animate({left:'0'},300);
+				$("body").css('overflow','auto');
+				$(this).css('display','none');
+				mySwiper.startAutoplay();
+				$("body").off('touchmove');
+			})
+			$(".right").eq(0).click(function(){
+				window.location.href = 'server.html';
+			})
+			$(".head_img").click(function(){
+				window.location.href = 'personal.html';
+			})
+			$(".vip").click(function(){
+				window.location.href = 'rate.html';
+			})
+			$(".show1,.show2,.show3,.show4,.show5").click(function(){
+				window.location.href = 'subject.html';
+			})
+			$(".commodity").click(function(){
+				window.location.href = 'details.html';
+			})
+			$(".list_contain").eq(0).click(function(){
+				window.location.href = 'order_index.html';
+			})
+			$(".list_contain").eq(3).click(function(){
+				window.location.href = 'collection.html';
+			})
+			isScrollToPageBottom();
+    		watchScroll();
+		})
+	</script>
+</html>

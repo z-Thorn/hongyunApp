@@ -1,0 +1,47 @@
+body {
+  background: #fcf5eb;
+  position: relative; }
+
+p {
+  margin: 0; }
+
+.top {
+  position: fixed;
+  top: 0.1rem;
+  width: 7.50rem;
+  height: 0.24rem;
+  background: url(../../img/index/head.png) no-repeat center;
+  background-size: 7.27rem 0.24rem; }
+
+.return {
+  position: absolute;
+  top: 0.76rem;
+  left: 0.65rem;
+  width: 0.2rem;
+  height: 0.36rem;
+  background: url(../../img/order/sy/arrow.png) no-repeat;
+  background-size: 100% 100%; }
+
+.title {
+  width: 100%;
+  font-size: 0.36rem;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  padding-top: 0.74rem; }
+
+.line {
+  position: relative;
+  width: 2.7rem;
+  height: 0.01rem;
+  margin: 0 auto;
+  background: #333333; }
+  .line span {
+    height: 0.33rem;
+    font-size: 0.34rem;
+    color: #333333;
+    position: absolute;
+    top: -0.23rem;
+    left: 0.31rem;
+    padding: 0 0.37rem;
+    background: #fcf5eb; }

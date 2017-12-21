@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>引导页</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lead/lead.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--<div class="top"></div>-->
+		<div class="jump">
+			<span class="second">3s</span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var num = 3;
+			var storage = window.localStorage;
+			function count(){
+				num--;
+				$(".second").html(num+'s');
+				if(num<1){
+					clearInterval(int);
+					if(storage.getItem('setPhone')){
+						window.location.href = 'index.html';	
+					}else{
+						window.location.href = 'login_register.html';
+					}
+				}
+			}
+			var int = setInterval(count,1000);
+			var rand = parseInt(Math.random()*3+1);
+			$("body").css("background-image",("url(img/lead/1/"+rand+".png)"))
+			$(".jump").click(function(){
+				window.location.href = 'index.html';
+			})
+		})
+	</script>
+</html>

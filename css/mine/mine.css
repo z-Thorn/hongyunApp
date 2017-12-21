@@ -1,0 +1,217 @@
+body {
+  background: #fcf5eb;
+  position: relative;
+  margin-bottom: 1rem; }
+
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+  background: url(../../img/mine/ios/back.png) no-repeat;
+  background-size: 100% 100%; }
+  .wrap .top {
+    position: fixed;
+    top: 0.1rem;
+    width: 100%;
+    height: 0.24rem;
+    background: url(../../img/index/head.png) no-repeat center;
+    background-size: 7.27rem 0.24rem; }
+  .wrap .head_img {
+    position: absolute;
+    top: 1.15rem;
+    left: 0.65rem;
+    width: 1.93rem;
+    height: 1.93rem;
+    background: url(../../img/mine/ios/tx.png) no-repeat;
+    background-size: 100% 100%; }
+  .wrap .nickname {
+    position: absolute;
+    top: 1.9rem;
+    left: 2.96rem;
+    font-size: 0.26rem;
+    color: #333333; }
+  .wrap .vip {
+    position: absolute;
+    top: 2.33rem;
+    left: 2.87rem;
+    width: 1.22rem;
+    height: 0.39rem;
+    background: url(../../img/mine/ios/viop.png) no-repeat;
+    background-size: 100% 100%; }
+
+.order_form {
+  width: 6.2rem;
+  height: 2.7rem;
+  margin: 0.43rem auto 0.88rem;
+  display: flex;
+  justify-content: space-between; }
+  .order_form .left {
+    width: 4.1rem;
+    height: 2.7rem; }
+    .order_form .left .top, .order_form .left .bottom {
+      width: 100%;
+      height: 1.3rem;
+      display: flex;
+      justify-content: space-between; }
+    .order_form .left .top .top_left {
+      width: 2rem;
+      height: 1.3rem;
+      background: url(../../img/mine/ios/1.png) no-repeat;
+      background-size: 100% 100%; }
+    .order_form .left .top .top_right {
+      width: 2rem;
+      height: 1.3rem;
+      background: url(../../img/mine/ios/2.png) no-repeat;
+      background-size: 100% 100%; }
+    .order_form .left .bottom {
+      margin-top: 0.1rem; }
+      .order_form .left .bottom .bottom_left {
+        width: 2rem;
+        height: 1.3rem;
+        background: url(../../img/mine/ios/3.png) no-repeat;
+        background-size: 100% 100%; }
+      .order_form .left .bottom .bottom_right {
+        width: 2rem;
+        height: 1.3rem;
+        background: url(../../img/mine/ios/4.png) no-repeat;
+        background-size: 100% 100%; }
+  .order_form .right {
+    width: 2rem;
+    height: 2.69rem;
+    background: url(../../img/mine/ios/5.png) no-repeat;
+    background-size: 100% 100%; }
+
+.row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10 {
+  height: 1.09rem;
+  border-bottom: 1px solid #d4cec6;
+  display: flex;
+  align-items: center; }
+  .row1 .row_in, .row2 .row_in, .row3 .row_in, .row4 .row_in, .row5 .row_in, .row6 .row_in, .row7 .row_in, .row8 .row_in, .row9 .row_in, .row10 .row_in {
+    width: 6.20rem;
+    height: 0.51rem;
+    display: block;
+    overflow: hidden; }
+    .row1 .row_in .name, .row2 .row_in .name, .row3 .row_in .name, .row4 .row_in .name, .row5 .row_in .name, .row6 .row_in .name, .row7 .row_in .name, .row8 .row_in .name, .row9 .row_in .name, .row10 .row_in .name {
+      font-size: 0.35rem;
+      color: #333333;
+      line-height: 0.51rem;
+      float: left; }
+    .row1 .row_in .logo, .row2 .row_in .logo, .row3 .row_in .logo, .row4 .row_in .logo, .row5 .row_in .logo, .row6 .row_in .logo, .row7 .row_in .logo, .row8 .row_in .logo, .row9 .row_in .logo, .row10 .row_in .logo {
+      width: 0.51rem;
+      height: 0.51rem;
+      float: right; }
+
+.row1 {
+  width: 100%; }
+  .row1 .row_in {
+    margin: 0 auto; }
+  .row1 .logo {
+    background: url(../../img/mine/ios/vip.png) no-repeat;
+    background-size: 100% 100%; }
+
+.row2 {
+  width: 6.84rem;
+  margin-left: 0.66rem; }
+  .row2 .logo {
+    background: url(../../img/mine/ios/order.png) no-repeat;
+    background-size: 100% 100%; }
+
+.row3 {
+  width: 6.84rem;
+  margin-left: 0.66rem; }
+  .row3 .logo {
+    background: url(../../img/mine/ios/sc.png) no-repeat;
+    background-size: 100% 100%; }
+
+.row4 {
+  width: 6.84rem;
+  margin-left: 0.66rem; }
+  .row4 .logo {
+    background: url(../../img/mine/ios/sm.png) no-repeat;
+    background-size: 100% 100%; }
+
+.row5 {
+  width: 100%; }
+  .row5 .row_in {
+    margin: 0 auto; }
+  .row5 .logo {
+    background: url(../../img/mine/ios/pm.png) no-repeat;
+    background-size: 100% 100%; }
+
+.row6 {
+  width: 6.84rem;
+  margin-left: 0.66rem; }
+  .row6 .logo {
+    background: url(../../img/mine/ios/yh.png) no-repeat;
+    background-size: 100% 100%; }
+
+.row7 {
+  width: 100%; }
+  .row7 .row_in {
+    margin: 0 auto; }
+  .row7 .logo {
+    background: url(../../img/mine/ios/fq.png) no-repeat;
+    background-size: 100% 100%; }
+
+.row8 {
+  width: 6.84rem;
+  margin-left: 0.66rem; }
+  .row8 .logo {
+    background: url(../../img/mine/ios/server.png) no-repeat;
+    background-size: 100% 100%; }
+
+.row9 {
+  width: 6.84rem;
+  margin-left: 0.66rem; }
+  .row9 .logo {
+    background: url(../../img/mine/ios/yj.png) no-repeat;
+    background-size: 100% 100%; }
+
+.row10 {
+  width: 6.84rem;
+  margin-left: 0.66rem; }
+  .row10 .logo {
+    background: url(../../img/mine/ios/setting.png) no-repeat;
+    background-size: 100% 100%; }
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.98rem;
+  background: #fffcf8; }
+  .foot .nav {
+    width: 6.52rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .foot .nav a {
+      display: block; }
+    .foot .nav .home_page {
+      width: 0.43rem;
+      height: 0.71rem;
+      background: url(../../img/classify/first.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .classify {
+      width: 0.48rem;
+      height: 0.62rem;
+      background: url(../../img/index/tab/mr/classify.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .order {
+      width: 0.42rem;
+      height: 0.70rem;
+      background: url(../../img/index/tab/mr/custom.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .bag {
+      width: 0.64rem;
+      height: 0.69rem;
+      background: url(../../img/index/tab/mr/shopping-bag.png) no-repeat;
+      background-size: 100% 100%; }
+    .foot .nav .mine {
+      width: 0.42rem;
+      height: 0.70rem;
+      background: url(../../img/index/tab/xz/my.png) no-repeat;
+      background-size: 100% 100%; }

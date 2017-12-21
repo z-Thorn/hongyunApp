@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/details/details.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--<div class="top"></div>-->
+		<span class="return"></span>
+		<div class="more"></div>
+		<!--轮播-->
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide"></div>
+		    <div class="swiper-slide"></div>
+		    <div class="swiper-slide"></div>
+		    <div class="swiper-slide"></div>
+		  </div>
+		  <div class="intro"></div>
+		</div>
+		<div class="alert"></div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			//轮播
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: 1500,
+				autoplayDisableOnInteraction : false,
+			});
+			$(".return").click(function(){
+				history.back();
+			})
+		})
+	</script>
+</html>

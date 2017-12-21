@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>登录页</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login_register/login.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/auto-size.js"></script>
+	</head>
+	<body>
+		<!--<div class="top"></div>-->
+		<div class="return"></div>
+		<span class="forget">忘记密码</span>
+		<span class="phone_number">手机号</span>
+		<input type="tel" placeholder="输入数字"/ id="tel" value="">
+		<span class="alert"></span>
+		<div class="line1"></div>
+		<span class="password">密码</span>
+		<input type="password" name="" id="psw" value=""/>
+		<span class="alert_pass"></span>
+		<div class="line2"></div>
+		<div class="check">
+			<span class="choose"><img src="img/login_register2/login/ios/choose.png"/></span>
+			<span class="display">显示密码</span>
+		</div>
+		<div class="judge"></div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".return").click(function(){
+				history.back();
+			})
+			//进来默认显示保存好的手机号
+			$("#tel").val(localStorage.setPhone);
+			var flag = true;
+			$(".choose").click(function(){
+				if(flag){
+					$("img").css('display','block');
+					$("#psw").attr('type','text');
+					flag = !flag;
+				}else{
+					$("img").css('display','none');
+					$("#psw").attr('type','password');
+					flag = !flag;
+				}
+			})
+			$("#tel").blur(function(){
+				$("#psw").focus();
+			})
+			$("#psw").blur(function(){
+				$(".judge").css('background-image','url(img/login_register2/login/ios/deep.png)');
+			})
+			$(".judge").click(function(){
+				var tel = $("#tel").val();
+				var myreg=/^[1][1,2,3,4,5,6,7,8,9][0-9]{9}$/;
+				var psw =$("#psw").val();
+//				var aa=new RegExp("(?![a-z]+$|[0-9]+$)^[a-zA-Z0-9]{6,16}$");
+				var flag1=false,flag2=false;
+				if(tel==''){
+					$(".alert").css('display','block');
+					$(".alert").html('内容不能为空！');
+				}else if(!myreg.test(tel)){
+					$(".alert").css('display','block');
+					$(".alert").html('请输入正确的手机号！');
+				}else{
+					flag1=true;
+				}
+				if(psw==''){
+					$(".alert_pass").css('display','block');
+					$(".alert_pass").html('密码不能为空！');
+				}else if(psw!=localStorage.setPass){
+					$(".alert_pass").css('display','block');
+					$(".alert_pass").html('密码错误！');
+				}else{
+					flag2=true;
+				}
+				if(flag1==true&&flag2==true){
+					window.location.href = 'index.html';
+				}
+			})
+		})
+	</script>
+</html>
